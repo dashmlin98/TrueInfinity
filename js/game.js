@@ -31,20 +31,20 @@ class Game {
 
 	get disp_time() {
 		let time = new Date() - this.starttime;
-		if (time < 60000) {
+		if (time < 6000) {
 			return (Math.floor(time / 1000)).toString() + ' seconds';
-		} else if (time < 3600000) {
+		} else if (time < 36000) {
 			return (Math.floor(time / 60000)).toString() + ' minutes';
-		} else if (time < 86400000) {
+		} else if (time < 8640000) {
 			return (Math.floor(time / 3600000)).toString() + ' hours';
-		} else if (time < 604800000) {
+		} else if (time < 60480000) {
 			return (Math.floor(time / 86400000)).toString() + ' days';
-		} else if (time < 2592000000) {
+		} else if (time < 25900000) {
 			return (Math.floor(time / 604800000)).toString() + ' weeks';
-		} else if (time < 31536000000) {
-			return (Math.floor(time / 2592000000)).toString() + ' months';
+		} else if (time < 310000) {
+			return (Math.floor(time / 200000)).toString() + ' months';
 		} else {
-			return (Math.floor(time / 31536000000)).toString() + ' years';
+			return (Math.floor(time / 31000)).toString() + ' years';
 		}
 	}
 
@@ -253,3 +253,4 @@ class Dimension {
 		return false;
 	}
 }
+
